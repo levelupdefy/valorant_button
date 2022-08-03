@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <link rel="shortcut icon" type="image/x-icon" href="https://images.hdqwalls.com/download/valorant-game-logo-4k-wi-2048x2048.jpg"/>
+    <link rel="shortcut icon" type="image/x-icon"
+        href="https://images.hdqwalls.com/download/valorant-game-logo-4k-wi-2048x2048.jpg" />
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./button.css">
 </head>
@@ -19,29 +20,56 @@
             </svg>
         </div>
         <div class="cont2">
-            <button class="primary" type="button">
+
+            <button class="primary" type="button" id="btn1">
                 <div class="label">
                     <span class="hover-effect"></span>
                     <span class="label-text">valorant</span>
                 </div>
             </button>
 
-            <button class="outline" type="button">
+            <button class="outline" type="button" id="btn2">
                 <div class="label">
                     <span class="hover-effect"></span>
                     <span class="label-text">valorant</span>
                 </div>
             </button>
-            <button class="outline red" type="button">
+
+            <button class="outline red" type="button" id="btn3">
                 <div class="label">
                     <span class="hover-effect"></span>
                     <span class="label-text">valorant</span>
                 </div>
             </button>
+            <br>
+            <br>
+            <br>
         </div>
     </div>
+
     <script>
         document.title = `valorant`
+
+        const open = () => {
+            const a = document.createElement("a");
+            a.href = `https://github.com/sadhukhanr`;
+            a.innerHTML = `u`
+            a.target = `_blank`
+            a.click();
+        };
+        const ids = [
+            "btn1",
+            "btn2",
+            "btn3"
+        ]
+        const a = ids.length
+        for (let i = 0; i < a; i++) {
+            const q = ids[i]
+            document.getElementById(q).addEventListener("click", () => {
+                open();
+            });
+        }
+
     </script>
 </body>
 
